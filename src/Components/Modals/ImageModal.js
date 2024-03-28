@@ -14,12 +14,12 @@ const ImageModal = ({ post, setSelectPost }) => {
                             <p>{post.postUpdate && post.postUpdate + " ago"} </p>
                         </div>
                     </div>
-                    <div className='postImage'>
-                        <img src={post.story || post.postImage} alt="" />
-                    </div>
                 </div>
                 <div className="close" onClick={() => setSelectPost(false)} >
                     <i className="uil uil-times"></i>
+                </div>
+                <div className='content'>
+                    <img src={post.story || post.postImage} alt="" />
                 </div>
             </div>
         </div>

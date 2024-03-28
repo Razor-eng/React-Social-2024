@@ -96,23 +96,23 @@
 .ImageModal .card {
   width: 40%;
   height: 50%;
+  /* background-color: var(--color-white); */
+}
+
+.ImageModal .card .content {
+  margin-top: 4px;
+  border-radius: 12px;
+  height: 90%;
+  overflow: hidden;
+}
+
+.ImageModal .card .content img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .ImageModal .user p {
   font-size: 0.6rem;
   font-weight: 200;
-}
-
-.ImageModal .user .postImage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 36vh;
-}
-
-.ImageModal .user .postImage img {
-  max-height: 100%;
-  object-fit: contain;
-  border-radius: 12px;
 }
