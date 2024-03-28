@@ -1,0 +1,118 @@
+.createModal {
+  background: rgba(255, 255, 255, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  place-items: center;
+  display: none;
+  justify-content: center;
+}
+
+.createModal .card {
+  background: var(--color-white);
+  padding: 2rem 4rem;
+  border-radius: var(--card-border-radius);
+  width: 30%;
+  box-shadow: 0 0 1rem var(--color-gray);
+  position: relative;
+}
+
+.createModal .card .user {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+}
+.createModal .card .user .userHead {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.createModal .card .user .userHead h2 {
+  font-size: 0.7rem;
+}
+
+.createModal .card .user .userInput {
+  width: 100%;
+  height: 6rem;
+  background: #f1f1f1;
+  border-radius: 12px;
+}
+
+.createModal .card input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 12px;
+}
+
+.createModal .card input[type="text"]:focus {
+  outline: none;
+}
+
+.submitbtn {
+  background-color: #232f3e;
+  color: white;
+  padding: 12px 20px;
+  margin: 23px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 14px;
+}
+
+.submitbtn:hover {
+  opacity: 1;
+}
+
+.createModal .card .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+}
+
+.createModal .card .close:hover {
+  opacity: 0.6;
+}
+
+.createModal .card .close i {
+  font-size: 1.8rem;
+}
+
+/* Image Modal */
+.ImageModal {
+  display: flex;
+}
+
+.ImageModal .card {
+  width: 40%;
+  height: 50%;
+}
+
+.ImageModal .user p {
+  font-size: 0.6rem;
+  font-weight: 200;
+}
+
+.ImageModal .user .postImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 36vh;
+}
+
+.ImageModal .user .postImage img {
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
